@@ -1,0 +1,255 @@
+:root {
+  /* Global Colors */
+    --main-color: #7E6ACD;
+    --main-white: #FCFCFC;    
+    --black: #333;
+    --light-black: rgb(75, 75, 75);
+    --bg: #F2F6F9; 
+  /* Global Styles */
+    --box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 16px;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    max-width: 36em;
+
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+    
+    font-size: 1.1em;
+    font-family: "Avenir", "Arial", sans-serif;
+    color: var(--black);
+    line-height: 1.5;
+
+    background-color: var(--bg);
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.w3-row-padding  {
+  /* Center rows */
+  margin: 0 auto;
+  max-width:40em;
+}
+
+
+b {
+  font-weight: 500;
+  color: var(--light-black);
+}
+
+
+/* List Styling */
+ol {   
+    list-style-type: decimal;
+}
+
+ol li {
+    list-style-type: decimal;
+}
+
+ul li {
+    list-style-type: none;
+}
+/*------------*/
+
+
+/* Header Styling */
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    margin: 1.75em 0 0.5em;
+    border-bottom: 2px solid #dce3ea;
+}
+
+h1, h2 {
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+/*------------*/
+
+
+/* Head Styling */
+.top-header {
+    position: relative;
+    z-index: 1;
+}
+.top-header h1 {
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.top-header a  {}
+
+.top-header a:hover  {
+    color: #565656;
+}
+
+header a {
+    padding: 0 0.5em 0 0.5em;
+}
+/*------------*/
+
+
+/* Nav Styling */
+.navbar {
+    width: 100%;
+    padding: 0.5em 0 0.5em 1.75em;
+    background-color: var(--white);
+}
+
+.navbar-nav {
+    padding-left: .4em;
+    padding-top: .05em;
+}
+
+.nav-link {}
+
+.nav-link:hover {}
+
+.navbar-brand {
+  font-size: 1.2em;
+  margin-left: -.4em;
+  padding-left: 0 !important;
+}
+
+.navbar-brand:hover {}
+
+.nav-item {}
+/*------------*/
+
+
+/* Section Styling */
+section {
+    margin-top: .4em;
+    margin-bottom: 4em;
+    padding-bottom: 1em;
+    padding-top: 1em !important;    
+    
+    height: auto;
+    min-height: 35em;
+
+    background-color: var(--main-white);
+    color: var(--black);
+
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1em;
+}
+
+.section-h2 {
+  margin: .5em 0 0;
+  border: none
+}
+
+.section-h2  > p::first-letter {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.top-link {
+    font-size:.9em;
+    width: 100%;
+    text-align:right;
+}
+
+.slide {
+    display: none;
+}
+
+.demo {
+    cursor:pointer
+}
+
+blockquote {
+    background-color:#F8F8F8;
+    padding: .5em;
+    border: 2px solid var(--main-color);
+}
+/*-------------*/
+
+
+/* Footer Styling */
+footer {
+    font-size: 1em;
+    font-weight: 300;
+}
+/*------------*/
+
+
+/* Links */
+a {
+    font-weight:500;
+    color: var(--main-color);
+}
+a:hover {
+    -o-transition: .35s;
+    -ms-transition: .35s;
+    -moz-transition: .35s;
+    -webkit-transition: .35s;
+    transition: .35s;
+
+    color:#888888;    
+}
+a:link,
+a:visited {
+    text-decoration: none;
+}
+/*------------*/
+
+
+/* Device Specific Styling */
+@media all {
+    html {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: @screen-sm-min) {
+    .section{
+        margin:0;
+        font-size: 1em;
+        padding-left:5px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 35em) {
+    .section {
+        margin:0;
+        font-size: 1em;
+        padding-left:5px;
+        width: 100%;
+    }
+}
+/*------------*/
+
+strong {
+  color: var(--black);
+}
