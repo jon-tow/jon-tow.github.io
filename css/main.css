@@ -1,6 +1,6 @@
 :root {
   /* Global Colors */
-    --main-color: #7E6ACD;
+    --main-color: rgba(20, 75, 239, 0.729);
     --main-white: #FCFCFC;    
     --black: #333;
     --light-black: rgb(75, 75, 75);
