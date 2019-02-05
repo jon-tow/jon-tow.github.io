@@ -7,6 +7,7 @@
     --bg: #F2F6F9; 
   /* Global Styles */
     --box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
+    --inner-left-align: .9em;
 }
 
 * {
@@ -199,16 +200,24 @@ blockquote {
     padding: .5em;
     border: 2px solid var(--main-color);
 }
+
 /*-------------*/
+
 
 /* Project Styling */
 .project-row {
-  padding-left: .9em;
+  padding-left: var(--inner-left-align);
 }
+
 .project-item {
   margin-top: .5em;
 }
+
+.content-header {
+  padding-left: var(--inner-left-align);
+}
 /*------------*/
+
 
 /* Footer Styling */
 footer {
