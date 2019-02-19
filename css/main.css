@@ -130,7 +130,7 @@ header a {
 
 .navbar-brand {
   font-size: 1.3em;
-  margin-left: -. 51em;
+  margin-left: -.51em;
   padding-left: 0 !important;
 }
 
@@ -194,6 +194,9 @@ section {
     background-repeat: repeat-x;
     background-position: 0 1.1em;
     background-size: 1px 3px;
+    -webkit-background-size: 1px 3px;
+    -moz-background-size: 1px 3px;
+    -o-background-size: 1px 3px;
 }
 
 blockquote {
