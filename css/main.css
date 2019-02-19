@@ -115,7 +115,7 @@ header a {
 .navbar {
     width: 100%;
     padding: 0.5em 0 0.5em 1.75em;
-    background-color: var(--white);
+    background-color: var(--white);    
 }
 
 .navbar-nav {
@@ -123,13 +123,15 @@ header a {
     padding-top: .05em;
 }
 
-.nav-link {}
+.nav-link {
+  font-weight: 550;
+}
 
 .nav-link:hover {}
 
 .navbar-brand {
   font-size: 1.3em;
-  font-weight: 700;
+  font-weight: 550;
   margin-left: -.51em;
   padding-left: 0 !important;
 }
