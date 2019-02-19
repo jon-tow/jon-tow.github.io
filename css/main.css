@@ -124,15 +124,13 @@ header a {
 }
 
 .nav-link {
-  font-weight: 550;
 }
 
 .nav-link:hover {}
 
 .navbar-brand {
   font-size: 1.3em;
-  font-weight: 550;
-  margin-left: -.51em;
+  margin-left: -. 51em;
   padding-left: 0 !important;
 }
 
