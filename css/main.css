@@ -128,7 +128,8 @@ header a {
 .nav-link:hover {}
 
 .navbar-brand {
-  font-size: 1.2em;
+  font-size: 1.3em;
+  font-weight: 700;
   margin-left: -.51em;
   padding-left: 0 !important;
 }
@@ -152,7 +153,7 @@ section {
     background-color: var(--main-white);
     color: var(--black);
 
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: var(--box-shadow);
 }
 
