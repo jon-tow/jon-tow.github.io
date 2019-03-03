@@ -232,7 +232,6 @@ blockquote {
   grid-area: tab-name;
   display: flex;
   flex-direction: row;
-  align-items: center;
   padding-top: 1em;
 }
 
@@ -326,7 +325,7 @@ strong {
 }
 
 .svg-container { 
-  height: 90px;
+  height: 50px;
   padding-top: 0;
 } 
 
