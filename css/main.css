@@ -2,11 +2,11 @@
   /* Global Colors */
     --main-color: rgba(20, 75, 239, 0.729);
     --main-white: #FCFCFC;    
-    --black: #333;
+    --black: #505050;
     --light-black: rgb(75, 75, 75);
     --bg: #F2F6F9; 
   /* Global Styles */
-    --box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
+    --box-shadow: rgba(0, 0, 0, 0) 1px 3px 8px;
     --inner-left-align: .9em;
 }
 
@@ -22,7 +22,7 @@ html, body {
 
 body {
     min-height: 100%;
-    max-width: 36em;
+    max-width: 32em;
 
     flex-direction: column;
     position: relative;
@@ -32,17 +32,20 @@ body {
     font-family: "Roboto", "Arial", sans-serif;
     line-height: 1.5;
 
-    background-color: var(--bg);
+    background-color: var(--main-white);/*var(--bg);*/
 }
 
 .content {
     flex: 1 0 auto;
 }
 
-.w3-row-padding  {
-  /* Center rows */
-  margin: 0 auto;
-  max-width:40em;
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 100%;  
+  height: 1px;             
+  background-color: #EEEEEE;  
 }
 
 
@@ -82,8 +85,13 @@ h1, h2 {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 400;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: 400;
 }
 /*------------*/
 
@@ -113,8 +121,7 @@ header a {
 /* Nav Styling */
 .navbar {
     width: 100%;
-    padding: 0.5em 0 0.5em 1.75em;
-    background-color: var(--white);    
+    padding: 0.5em 0 0.5em 1.75em;        
 }
 
 .navbar-nav {
@@ -141,19 +148,17 @@ header a {
 
 /* Section Styling */
 section {
-    margin-top: .2em;
-    margin-bottom: 4em;
-    padding-bottom: .5em;
-    padding-top: .5em !important;    
+  display: flex;
+  flex-direction: column;
+  margin: 0em .5em .5em .5em;
+  padding-bottom: .5em;
     
-    height: auto;
-    min-height: 35em;
+  height: auto;
+  min-height: 32em;
 
-    background-color: var(--main-white);
-    color: var(--black);
-
-    border-radius: 6px;
-    box-shadow: var(--box-shadow);
+  background-color: var(--main-white);
+  color: var(--black);
+  box-shadow: var(--box-shadow);
 }
 
 .section-header {
@@ -161,15 +166,13 @@ section {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2.8em;
-  padding-top: .5em;
+  padding-left: 2em;
   padding-bottom: .7em;
-  border-bottom: 1px solid #EEEEEE;
 }
 
 .section-h2 {
   margin: .5em 0 0;
-  border: none
+  border: none;
 }
 
 .section-h2  > p::first-letter {
@@ -182,6 +185,13 @@ section {
     width: 100%;
     text-align:right;
     padding-right: 2em;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;  
+  flex-wrap: wrap;
+  padding: 1em 2em 0em 2em;
 }
 
 .slide {
@@ -207,7 +217,28 @@ blockquote {
     padding: .5em;
     border: 2px solid var(--main-color);
 }
+/*-------------*/
 
+
+/* About Styling */
+.tab-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "tab-name tab-info tab-info tab-info" "tab-name tab-info tab-info tab-info" "tab-name tab-info tab-info tab-info";  
+}
+
+.tab-title {
+  grid-area: tab-name;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tab-info { 
+  grid-area: tab-info;  
+  padding-left: 4.5em;
+}
 /*-------------*/
 
 
@@ -219,17 +250,17 @@ blockquote {
 .project-item {
   margin-top: .5em;
 }
-
-.content-header {
-  padding-left: var(--inner-left-align);
-}
 /*------------*/
 
 
 /* Footer Styling */
 footer {
-    font-size: 1em;
-    font-weight: 300;
+  color: var(--black);
+  display: flex;
+  flex-direction: row;
+  margin: 0em .5em 1em 2em;
+  font-size: 1em;
+  font-weight: 300;
 }
 /*------------*/
 
@@ -269,6 +300,10 @@ a:visited {
         padding-left:5px;
         width: 100%;
     }
+    .tab-info { 
+      grid-area: tab-info;  
+      padding-left: 2em;
+    }
 }
 
 @media screen and (max-width: 35em) {
@@ -278,9 +313,18 @@ a:visited {
         padding-left:5px;
         width: 100%;
     }
+    .tab-info { 
+      grid-area: tab-info;  
+      padding-left: 1.5em;
+    }
 }
 /*------------*/
 
 strong {
   color: var(--black);
 }
+
+.svg-container { 
+  height: 94px;
+  padding-top: 0;
+} 
