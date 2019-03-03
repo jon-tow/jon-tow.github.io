@@ -325,8 +325,8 @@ strong {
 }
 
 .svg-container { 
-  height: 94px;
+  height: 50px;
   padding-top: 0;
 } 
-svg {width: 100%; height: 140px;}
+svg {width: 100%; height: auto;}
 
