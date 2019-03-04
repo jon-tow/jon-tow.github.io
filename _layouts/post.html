@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+  {% include _base/head.html %}
+</head>
+
 <body class="" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
-  <main class="w3-content w3-margin-top" style="max-width:1400px;">
-    <div class="w3-row-padding">
-      {% include _base/head.html %} {% include _base/nav.html %}
+  <main class="" style="max-width:1400px;">
+    <div class="">
+      {% include _base/nav.html %}
       <!-- Notes Container -->
-      <div class="w3-container w3-margin-bottom section" id="blog">
+      <section class="pl-4 pt-4 pr-4" id="post">
         <!-- Notes Content -->
-        <div class="w3-container">
-          <h1>{{ page.title }}</h1>
+        <div class="post">
+          <h3>{{ page.title }}</h3>
           <p>{{ page.date | date_to_string }}</p>
           <p>{{ page.introduction }}</p>
           <p>{{ content }}</p>
@@ -38,7 +42,7 @@
           </noscript>
           {% endif %}
         </div>
-      </div>
+      </section>
     </div>
   </main>
   {% include _base/footer.html %}
