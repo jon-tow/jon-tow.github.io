@@ -1,6 +1,6 @@
 :root {
   /* Global Colors */
-    --main-color: rgba(20, 75, 239, 0.729);
+    --main-color: #154beeba;
     --main-white: #FCFCFC;    
     --black: #505050;
     --light-black: rgb(75, 75, 75);
@@ -152,7 +152,7 @@ section {
   display: flex;
   flex-direction: column;
   height: auto; 
-  min-height: 26em;
+  min-height: 27em;
   flex: 1 1 auto;
 }
 
@@ -216,6 +216,9 @@ blockquote {
 
 #about {
   
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  background-position: center right; 
 }
 
 #project {
