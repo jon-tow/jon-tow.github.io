@@ -153,10 +153,8 @@ section {
   flex-direction: column;
     
   height: auto;
-  min-height: 32em;
-  
-  /*border: 1px solid #EEEEEE;*/
-  color: var(--black);
+  min-height: 30em;
+ 
   box-shadow: var(--box-shadow);
 }
 
