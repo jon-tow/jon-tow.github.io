@@ -64,9 +64,7 @@ ol li {
     list-style-type: decimal;
 }
 
-ul li {
-    list-style-type: none;
-}
+
 /*------------*/
 
 
@@ -129,6 +127,9 @@ header a {
     padding-left: .4em;
     padding-top: .05em;
 }
+.navbar-nav .navbar ul li {
+  list-style-type: none;
+}
 
 .nav-link {
 }
@@ -152,7 +153,7 @@ section {
   display: flex;
   flex-direction: column;
   height: auto; 
-  min-height: 27em;
+  min-height: 26em;
   flex: 1 1 auto;
 }
 
