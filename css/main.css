@@ -151,9 +151,9 @@ header a {
 section {
   display: flex;
   flex-direction: column;
-    
-  height: auto;
+  height: auto; 
   min-height: 26em;
+  flex: 1 1 auto;
 }
 
 .section-header {
