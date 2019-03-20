@@ -4,7 +4,7 @@
     --main-white: #FCFCFC;    
     --black: #505050;
     --light-black: rgb(75, 75, 75);
-    --bg: rgba(240, 242, 247, 0.918);
+    --bg: rgb(244, 244, 251);
   /* Global Styles */
     --box-shadow: rgba(0, 0, 0, 0) 1px 0px 8px;
     --inner-left-align: .9em;
@@ -155,7 +155,7 @@ section {
   height: auto; 
   min-height: 26em;
   flex: 1 1 auto;
-  
+  border-radius: 4px;
 }
 
 .section-header {
