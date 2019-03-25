@@ -125,13 +125,13 @@ header a {
 
 .navbar-nav {
     padding-left: .4em;
-    padding-top: .05em;
 }
 .navbar-nav .navbar ul li {
   list-style-type: none;
 }
 
 .nav-link {
+  padding-bottom: 0px;
 }
 
 .nav-link:hover {}
@@ -276,21 +276,16 @@ footer {
 /* Links */
 a {
     font-weight:500;
-
     color: var(--main-color);
+    border-bottom: 2px solid transparent;
 }
 a:hover {
-    -o-transition: .35s;
-    -ms-transition: .35s;
-    -moz-transition: .35s;
-    -webkit-transition: .35s;
-    transition: .35s;
-
-    color:#888888;    
+    border-bottom: 2px dashed #7a7a7a;
+    text-decoration: none;
+    color: var(--black);    
 }
 a:link,
 a:visited {
-    text-decoration: none;
 }
 /*------------*/
 
