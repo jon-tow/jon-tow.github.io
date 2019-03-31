@@ -276,10 +276,10 @@ footer {
 /* Links */
 a {
     color: var(--main-color);
-    border-bottom: 4px solid transparent;
+    border-bottom: 2px solid transparent;
 }
 a:hover {
-    border-bottom: 4px dotted #c0c0c0;
+    border-bottom: 2px dashed var(--black);
     text-decoration: none;
     color: var(--black);    
 }
