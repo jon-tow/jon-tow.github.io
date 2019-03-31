@@ -275,12 +275,11 @@ footer {
 
 /* Links */
 a {
-    font-weight:500;
     color: var(--main-color);
-    border-bottom: 5px solid transparent;
+    border-bottom: 4px solid transparent;
 }
 a:hover {
-    border-bottom: 5px dotted #b4b4b4;
+    border-bottom: 4px dotted #c0c0c0;
     text-decoration: none;
     color: var(--black);    
 }
