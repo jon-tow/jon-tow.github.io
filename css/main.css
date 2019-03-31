@@ -152,6 +152,7 @@ header a {
 section {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   height: auto; 
   min-height: 26em;
   flex: 1 1 auto;
@@ -217,7 +218,6 @@ blockquote {
 /*-------------*/
 
 #about {
-  
   background-repeat: no-repeat;
   background-size: 100px 100px;
   background-position: center right; 
@@ -277,10 +277,10 @@ footer {
 a {
     font-weight:500;
     color: var(--main-color);
-    border-bottom: 2px solid transparent;
+    border-bottom: 5px solid transparent;
 }
 a:hover {
-    border-bottom: 2px dashed #7a7a7a;
+    border-bottom: 5px dotted #b4b4b4;
     text-decoration: none;
     color: var(--black);    
 }
