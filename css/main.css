@@ -51,7 +51,7 @@ header {
   display:flex;
   flex-direction: column;
 
-  padding: 1em 0em 0em 0em;
+  padding-top: 1em;
 }
 
 main {  
@@ -59,7 +59,6 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
 
   overflow-y:scroll;
   height: 90%;
@@ -119,6 +118,7 @@ footer {
   padding-right: 1em;
   background-color: var(--secondary-bg);
 }
+
 .arrow-right-file {
   width: 0; 
   height: 0; 
@@ -203,10 +203,9 @@ h1, h2 {
 }
 
 h3 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 400;
     color: #FF79C2;
-
 }
 
 h4 {
@@ -223,8 +222,9 @@ header a {
 
 /* Nav Styling */
 .navbar {
-    width: 100%;  
-    padding: 0.5em 0 0.5em 1.5em;        
+  width: 100%;  
+  padding-left: 2.6em;  
+  padding-right: 1.4em; 
 }
 
 .navbar a {
@@ -232,7 +232,7 @@ header a {
 }
 
 .navbar-nav {
-    padding-left: .4em;
+    
 }
 .navbar-nav .navbar ul li {
   list-style-type: none;
@@ -267,8 +267,6 @@ section {
   height: 100%;
   width: 100%;
 
-  padding-bottom: 1em;
-  margin-bottom: 1em;
 }
 
 .section-header {
@@ -347,8 +345,7 @@ blockquote {
 
 
 #about {
-  margin-top: 1em;
-
+  margin-top: .5em;
 }
 
 #project {
