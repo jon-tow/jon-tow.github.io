@@ -389,6 +389,7 @@ blockquote {
 /* Project Styling */
 .project-row {
   padding-left: var(--inner-left-align);
+  padding-top: 0.5em;
 }
 
 .project-item {
