@@ -1,10 +1,13 @@
 :root {
   /* Global Colors */
-    --main-color: rgba(21, 75, 238, 0.729);
-    --main-white: #FCFCFC;    
+    --main-color:#BF95F2;
+    --main-white: #F8F8F3;    
     --black: #505050;
-    --light-black: rgb(75, 75, 75);
-    --bg: rgb(244, 244, 251);
+    --og: rgb(255, 151, 54);
+    --light-black: rgb(92, 92, 92);
+    --bg: #282A35;
+    --green: #2FE98C;
+    --secondary-bg: #464751;
   /* Global Styles */
     --box-shadow: rgba(0, 0, 0, 0) 1px 0px 8px;
     --inner-left-align: .9em;
@@ -21,37 +24,154 @@ html, body {
 }
 
 body {
-    min-height: 100%;
-    max-width: 32em;
-
     flex-direction: column;
-    position: relative;
+
     margin: 0 auto;
     
-    font-size: 1.1em;
-    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 1.0em;  
+    font-family: "Roboto Mono", "Arial", sans-serif;
+
     line-height: 1.5;
+    
+    max-width: 40em;
 
-    background-color: var(--main-white);/*var(--bg);*/
+    color: var(--main-white);
+    background-color: var(--bg);
 }
 
-.content {
-    flex: 1 0 auto;
+article {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  
 }
 
-hr {
-  border: 0;
-  clear:both;
-  display:block;
-  width: 100%;  
-  height: 1px;             
-  background-color: #EEEEEE;  
+header {
+  display:flex;
+  flex-direction: column;
+
+  padding: 1em 0em 0em 0em;
 }
 
+main {  
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+
+  overflow-y:scroll;
+  height: 90%;
+}
+
+footer {    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 12px;
+  flex-wrap: nowrap;
+  
+  width: 100%;
+  height: 2em;
+  position: fixed;
+  left: 25%;
+  margin-left: -25%;
+  bottom:0;
+  
+  position: fixed;
+    
+  color: var(--main-white);
+}
+
+.footer-date {
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  padding-left: .5em;
+  padding-right: .1em;
+  color: var(--bg);
+  background-color: var(--og);
+}
+
+.arrow-right-date {
+  
+  width: 0; 
+  height: 0; 
+  border-top: 1em solid transparent;
+  border-bottom: 1em solid transparent;  
+  padding-right: 0.5em;
+
+  border-left: 1em solid var(--og);
+  background-color: #464751;
+}
+
+.footer-name {  
+  height: 100%;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: .5em;  
+  padding-right: 1em;
+  background-color: var(--secondary-bg);
+}
+.arrow-right-file {
+  width: 0; 
+  height: 0; 
+  border-top: 1em solid transparent;
+  border-bottom: 1em solid transparent;
+  padding-left: 1em;
+  
+  border-left: 1em solid var(--secondary-bg);
+  background-color: #B75DC8; /* var(--main-color);*/
+}
+
+.footer-mode {
+  flex-grow: 1;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  color: var(--main-white);
+  background-color: #B75DC8;
+}
+
+.arrow-left-mode {
+  width: 0; 
+  height: 0; 
+ 
+  border-top: 1em solid transparent;
+  border-bottom: 1em solid transparent;
+  padding-right: 0.5em;
+  border-right: 1em solid var(--secondary-bg); 
+  background-color: #B75DC8;
+}
+
+.footer-percent {
+  height: 100%;
+  padding-right: 1em;
+  padding-left: .5em;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: var(--secondary-bg);
+  
+}
+
+header, main, footer {
+  flex-shrink: 0;
+}
 
 b {
   font-weight: 500;
-  color: var(--light-black);
+  
+  color: #FF79C2;
 }
 
 
@@ -85,6 +205,8 @@ h1, h2 {
 h3 {
     font-size: 1.4em;
     font-weight: 400;
+    color: #FF79C2;
+
 }
 
 h4 {
@@ -94,33 +216,19 @@ h4 {
 /*------------*/
 
 
-/* Head Styling */
-.top-header {
-    position: relative;
-    z-index: 1;
-}
-.top-header h1 {
-    font-size: 2.5em;
-    font-weight: 300;
-}
-
-.top-header a  {}
-
-.top-header a:hover  {
-    color: #565656;
-}
-
 header a {
-    padding: 0 0.5em 0 0.5em;
+  padding: 0 0.5em 0 0.5em;    
+  
 }
-/*------------*/
-
 
 /* Nav Styling */
 .navbar {
-    width: 100%;
+    width: 100%;  
     padding: 0.5em 0 0.5em 1.5em;        
-    background-color: var(--main-white);    
+}
+
+.navbar a {
+  /*color: white !important;*/
 }
 
 .navbar-nav {
@@ -136,9 +244,11 @@ header a {
 
 .nav-link:hover {}
 
+
 .navbar-brand {
   font-size: 1.3em;
-  margin-left: -.51em;
+  margin-left: -.50em;
+  color: white;
   padding-left: 0 !important;
 }
 
@@ -153,10 +263,12 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: auto; 
-  min-height: 26em;
-  flex: 1 1 auto;
-  border-radius: 4px;
+  
+  height: 100%;
+  width: 100%;
+
+  padding-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .section-header {
@@ -176,6 +288,17 @@ section {
 .section-h2  > p::first-letter {
   color: var(--main-color);
   text-decoration: underline;
+}
+
+section a {
+  color: var(--green);
+}
+section a:hover {
+  color: var(--main-white);
+}
+
+section i {
+    color: var(--green);
 }
 
 .top-link {
@@ -217,14 +340,20 @@ blockquote {
 }
 /*-------------*/
 
+#intro {
+  height: 100%;
+  color: #F8F8F3;
+}
+
+
 #about {
-  background-repeat: no-repeat;
-  background-size: 100px 100px;
-  background-position: center right; 
+  margin-top: 1em;
+
 }
 
 #project {
-  background-color: var(--bg);
+  /* background-color: #444758; */
+  margin-bottom: 3em;
 }
 
 /* About Styling */
@@ -257,31 +386,22 @@ blockquote {
 .project-item {
   margin-top: .5em;
 }
-/*------------*/
 
-
-/* Footer Styling */
-footer {
-  color: var(--black);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;    
-  font-size: 1em;
-  font-weight: 300;
-  padding-left: 2em;
+.project-type {
+  color: var(--light-black);
 }
 /*------------*/
-
 
 /* Links */
 a {
-    color: var(--main-color);
-    border-bottom: 2px solid transparent;
+  color: var(--main-white);
+  border-bottom: 2px solid transparent;
 }
+
 a:hover {
     border-bottom: 2px dashed var(--black);
     text-decoration: none;
-    color: var(--black);    
+    color: var(--main-white);
 }
 a:link,
 a:visited {
@@ -331,4 +451,11 @@ strong {
   height: 50px;
   padding-top: 0;
 } 
+
+
+
+
+
+
+
 
