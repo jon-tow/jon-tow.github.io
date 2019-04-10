@@ -4,6 +4,7 @@
     --main-white: #F8F8F3;    
     --black: #505050;
     --og: rgb(255, 151, 54);
+    --pink: rgb(252, 124, 194);
     --light-black: rgb(92, 92, 92);
     --bg: #282A35;
     --green: #2FE98C;
@@ -28,12 +29,12 @@ body {
 
     margin: 0 auto;
     
-    font-size: 1.0em;  
-    font-family: "Roboto Mono", "Arial", sans-serif;
-
+    font-size: 1em;  
+    font-family: "Inconsolata", monospace, sans-serif;
+    font-weight: 300;
     line-height: 1.5;
     
-    max-width: 40em;
+    max-width: 34em;
 
     color: var(--main-white);
     background-color: var(--bg);
@@ -68,11 +69,11 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  font-size: 12px;
+  font-size: .875em;
   flex-wrap: nowrap;
   
   width: 100%;
-  height: 2em;
+  height: 1.7em;
   position: fixed;
   left: 25%;
   margin-left: -25%;
@@ -99,8 +100,8 @@ footer {
   
   width: 0; 
   height: 0; 
-  border-top: 1em solid transparent;
-  border-bottom: 1em solid transparent;  
+  border-top: .85em solid transparent;
+  border-bottom: .85em solid transparent;  
   padding-right: 0.5em;
 
   border-left: 1em solid var(--og);
@@ -133,12 +134,12 @@ footer {
 .arrow-right-file {
   width: 0; 
   height: 0; 
-  border-top: 1em solid transparent;
-  border-bottom: 1em solid transparent;
+  border-top: .85em solid transparent;
+  border-bottom: .85em solid transparent;
   padding-left: 1em;
   
   border-left: 1em solid var(--secondary-bg);
-  background-color: #B75DC8; /* var(--main-color);*/
+  background-color: #585858; /* var(--main-color);*/
 }
 
 .footer-mode {
@@ -149,18 +150,18 @@ footer {
   justify-content: center;
   
   color: var(--main-white);
-  background-color: #B75DC8;
+  background-color: #585858;
 }
 
 .arrow-left-mode {
   width: 0; 
   height: 0; 
  
-  border-top: 1em solid transparent;
-  border-bottom: 1em solid transparent;
+  border-top: .85em solid transparent;
+  border-bottom: .85em solid transparent;
   padding-right: 0.5em;
   border-right: 1em solid var(--secondary-bg); 
-  background-color: #B75DC8;
+  background-color: #585858;
 }
 
 .footer-percent {
@@ -182,7 +183,7 @@ header, main, footer {
 b {
   font-weight: 500;
   
-  color: #FF79C2;
+  color: var(--pink);
 }
 
 
@@ -202,6 +203,7 @@ ol li {
 /* Header Styling */
 h1 {
     font-size: 2em;
+    
 }
 
 h2 {
@@ -210,18 +212,18 @@ h2 {
 }
 
 h1, h2 {
-    font-weight: 100;
+    font-weight: 600;    
 }
 
 h3 {
     font-size: 1.2em;
-    font-weight: 400;
+    font-weight: 500;
     color: #FF79C2;
 }
 
 h4 {
   font-size: 1.1em;
-  font-weight: 400;
+  font-weight: 500;
 }
 /*------------*/
 
