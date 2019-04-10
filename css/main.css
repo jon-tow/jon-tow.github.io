@@ -73,7 +73,7 @@ footer {
   flex-wrap: nowrap;
   
   width: 100%;
-  height: 1.7em;
+  height: 2em;
   position: fixed;
   left: 25%;
   margin-left: -25%;
@@ -100,8 +100,8 @@ footer {
   
   width: 0; 
   height: 0; 
-  border-top: .85em solid transparent;
-  border-bottom: .85em solid transparent;  
+  border-top: 1em solid transparent;
+  border-bottom: 1em solid transparent;  
   padding-right: 0.5em;
 
   border-left: 1em solid var(--og);
@@ -134,8 +134,8 @@ footer {
 .arrow-right-file {
   width: 0; 
   height: 0; 
-  border-top: .85em solid transparent;
-  border-bottom: .85em solid transparent;
+  border-top: 1em solid transparent;
+  border-bottom: 1em solid transparent;
   padding-left: 1em;
   
   border-left: 1em solid var(--secondary-bg);
@@ -157,8 +157,8 @@ footer {
   width: 0; 
   height: 0; 
  
-  border-top: .85em solid transparent;
-  border-bottom: .85em solid transparent;
+  border-top: 1em solid transparent;
+  border-bottom: 1em solid transparent;
   padding-right: 0.5em;
   border-right: 1em solid var(--secondary-bg); 
   background-color: #585858;
