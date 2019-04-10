@@ -259,11 +259,11 @@ header a {
 
 
 .navbar-brand {
-
+  font-size:1.375em;  
   font-weight: 600;
   margin-left: -.50em;
   color: white;
-  padding-left: 0 !important;
+  padding-left:0 !important;
 }
 
 .navbar-brand:hover {}
