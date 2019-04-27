@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  {% include _base/head.html %}
+  {% include _base/head.html %} 
 </head>
-
 <body class="" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
-  <article>
-    <header>      
-    {% include _base/nav.html %}
-    {% include _sections/intro.html %}
-    </header>
-    <main>      
-      {{ content }}
+    <main class="" style="max-width:1400px;">
+            {% include _base/nav.html %} 
+            {{ content }} 
+            {% include _base/footer.html %}        
     </main>
-    {% include _base/footer.html %}
-  </article>
 </body>
 
 </html>
