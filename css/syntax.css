@@ -1,18 +1,16 @@
 .highlight{
-    border: 1px solid #CCCCCC;
-    padding: .5em;
+    padding: .5em;    
 }
 .highlight table td {
-
+  
     padding: 5px;
 }
 .highlight table {
-
+  
     padding: 10em;
 }
 
-.highlight table pre {
-
+.highlight table pre {  
     margin: 0; 
 }
 .highlight .cm {
@@ -220,5 +218,7 @@
     color: #bbbbbb;
 }
 .highlight {
-    background-color: #f8f8f8;
+    background-color: #F4F4F9;
+    border-radius: 4px;
+    margin: .2em 0 1em 0;
 }
