@@ -432,9 +432,7 @@ a:visited {
     }
 
     .sidebar {
-	height: 15vh;
-
-	margin-top: 2em;
+	height: 20vh;
 	background-color: white;
     }
 }
