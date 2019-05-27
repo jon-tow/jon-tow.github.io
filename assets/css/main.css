@@ -3,7 +3,8 @@
     --main-color: #8E80D6;
     --second-color: #f8a442;
     --third-color: #F86071;
-
+    --bg-2: #241a4d;
+    
     --main-white: #FCFCFC;    
     --black: #353535;
     --light-black: rgb(75, 75, 75, .85);
@@ -53,7 +54,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: var(--bg-2);
+
 }
 
 .contents { 
@@ -146,18 +148,22 @@ header a {
 
 
 /* Nav Styling */
-.navbar {    
+.navbar {
+    color: white
     margin-left: .65em;    
 }
 
 .navbar-nav  {
     padding-right: 1em !important;  
-    padding-left: 1em !important;  
+    padding-left: 1em !important;
 }
 
 .navbar-nav .navbar ul li {
-    background-color: white;
     list-style-type: none;
+}
+
+.navbar a {
+    color: white !important;
 }
 
 .nav-item {
@@ -166,8 +172,9 @@ header a {
 
 .navbar-brand {
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.75em;
     padding-left: .75em;
+    color: var(--third-color);
 }
 
 .navbar-brand:hover {}
@@ -197,7 +204,7 @@ section {
 
 .post {
     margin: 0 auto;
-    max-width: 46em;
+
 }
 
 .post-header {
@@ -205,7 +212,29 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-left: 2em;
+
+}
+
+.post-date {
+    color: var(--light-black);
+    font: 14px;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 42em;
+}
+
+.post-h2 {
+    border: none;
+}
+
+
+.post-h2  > p::first-letter {
+    color: var(--main-color);
+    text-decoration: underline;
 }
 
 .section-h2 {
@@ -232,25 +261,8 @@ section {
     padding: 1em 2em 0em 2.1em;
 }
 
-
-.post-content {
-    display: flex;
-    flex-direction: column;    
-    flex-wrap: wrap;
-
-    max-width: 42em;
-    
-    margin: 0;
-    padding: 0em 1em 0em 2.1em;
-}
-
 .entry-previews {
     list-style: none;
-}
-
-.post-date {
-    color: var(--light-black);
-    font: 14px;
 }
 
 .slide {
@@ -294,7 +306,9 @@ blockquote {
 }
 
 .note-content {
-
+    padding-left: 2em;
+    max-width: 46em;
+    margin: 0 auto;
 }
 
 .project-type {
@@ -433,8 +447,15 @@ a:visited {
 
     .sidebar {
 	height: 20vh;
-	background-color: white;
+    }
 
+    #about {
+	justify-content: flex-start;
+	padding-top: 2em;
+    }
+
+    .note-content {
+	padding-left: 1em;
     }
 }
 
