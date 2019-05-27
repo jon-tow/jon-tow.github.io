@@ -37,7 +37,6 @@ collections:
     output: true
     permalink: /_projects/:path
 
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -51,3 +50,6 @@ collections:
 #   - vendor/ruby/
 
 # Build settings
+
+# Allow post's written for future dates
+future: true
