@@ -177,12 +177,12 @@ header a {
 
 /* Section Styling */
 section {
-    padding-left: 1em;
+    padding-left: .6em;
     padding-right: 1em;
     
     min-height: 100vh; 
 
-    background-color: var(--main-white);
+    background-color: white;
 }
 
 .section-header {
@@ -282,7 +282,7 @@ blockquote {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 
 #project {
@@ -294,7 +294,7 @@ blockquote {
 }
 
 .note-content {
-    background-color: var(--main-white);
+
 }
 
 .project-type {
@@ -434,6 +434,7 @@ a:visited {
     .sidebar {
 	height: 20vh;
 	background-color: white;
+
     }
 }
 
