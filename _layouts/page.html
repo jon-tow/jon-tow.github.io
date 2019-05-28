@@ -5,23 +5,14 @@
     {% include _base/head.html %}
   </head>
 
-  <body class="container-fluid " data-spy="scroll" data-target="#myScrollspy" data-offset="20">
-    <main class="row m-0 mt-2 p-0" style="max-width:1400px;">
-      
-      <!-- Sidebar/Navbar -->
-      <div class="sidebar p-0 col-sm-12 col-md-5 col-lg-4">
-	<div id="particles-js"></div>
-	{% include _base/nav.html %}
-      </div>
-
+  <body class="" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+    <!-- Navbar -->
+    {% include _base/nav.html %}
+    <main class="">
       <!-- Content -->
-      <div class="contents p-0 col-sm col-md">
-	{{ content }}
-	{% include _base/footer.html %}
-      </div>
-
-      
+      {{ content }}
     </main>
+    {% include _base/footer.html %}
   </body>
 
 </html>

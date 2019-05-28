@@ -28,34 +28,24 @@ html, body {
 body {
     height: 100vh;
     margin: 0 auto;
-
+    max-width: 46em;
+    
     font-size: 1em;
     font-family: "Roboto", "Arial", sans-serif;
     line-height: 1.5;
     color: var(--black);
 }
 
+main {
+    margin: 0 auto;
+}
+
 .content {
-    flex: 1 0 auto;
+    flex: 1 0 auto;    
 }
 
 .third-color {
     color: var(--second-color);
-}
-.sidebar { 
-    position: sticky;
-    position: -webkit-sticky;
-
-    top: 0;
-    height: 100vh;
-    box-sizing: border-box;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bg-2);
-
 }
 
 .contents { 
@@ -115,16 +105,6 @@ h4 {
 }
 /*------------*/
 
-.home-banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-
-}
-
 /* Head Styling */
 .top-header {
     position: relative;
@@ -148,14 +128,21 @@ header a {
 
 
 /* Nav Styling */
-.navbar {
-    color: white
-    margin-left: .65em;    
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+    align-items: flex-start;
+
+    width: 100%;
+
+    padding-top: 2em;
+    padding-left: 1.6em;
+    padding-bottom: 1em;
 }
 
-.navbar-nav  {
-    padding-right: 1em !important;  
-    padding-left: 1em !important;
+.navbar {    
+
 }
 
 .navbar-nav .navbar ul li {
@@ -163,17 +150,17 @@ header a {
 }
 
 .navbar a {
-    color: white !important;
+    
 }
 
 .nav-item {
-    padding-left: .75em;
+
 }
 
 .navbar-brand {
     font-weight: bold;
     font-size: 1.75em;
-    padding-left: .75em;
+    padding-left: .5em;
     color: var(--third-color);
 }
 
@@ -184,12 +171,12 @@ header a {
 
 /* Section Styling */
 section {
-    padding-left: .6em;
-    padding-right: 1em;
-    
-    min-height: 100vh; 
+    padding: 2em 1em 2em .6em;
+    margin-bottom: 5em;
+    border-radius: 6px;
+    width: 40em;
+    box-shadow: 7px 6px var(--bg);
 
-    background-color: white;
 }
 
 .section-header {
@@ -197,14 +184,13 @@ section {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 1em;
-    padding-left: 2em;
-    padding-bottom: .7em;
+    
+    padding: 1em 0em .7em 2em;
 }
 
 .post {
     margin: 0 auto;
-
+    background-color: var(--main-white);
 }
 
 .post-header {
@@ -212,7 +198,6 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-
 }
 
 .post-date {
@@ -225,6 +210,7 @@ section {
     flex-direction: column;
     flex-wrap: wrap;
     max-width: 42em;
+    text-align: justify;    
 }
 
 .post-h2 {
@@ -247,18 +233,18 @@ section {
     text-decoration: underline;
 }
 
+.section-content {
+    display: flex;
+    flex-direction: column;  
+    flex-wrap: wrap;
+    padding: 1em 2em 0em 2em;
+}
+
 .top-link {
     font-size:.9em;
     width: 100%;
     text-align:right;
     padding-right: 2em;
-}
-
-.section-content {
-    display: flex;
-    flex-direction: column;  
-    flex-wrap: wrap;
-    padding: 1em 2em 0em 2.1em;
 }
 
 .entry-previews {
@@ -291,18 +277,18 @@ blockquote {
 /*-------------*/
 
 #about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+    margin-top: 1em;
+    text-align: justify;
+    padding-top: 0;
+    background-color: #f7faff;
 }
 
 #project {
-    background-color: var(--main-white);
+    background-color: #fffbf4;
 }
 
 #notes {
-    
+    background-color: rgba(255,192,203, 0.1);
 }
 
 .note-content {
@@ -357,36 +343,27 @@ footer {
     
     font-size: 14px;
 
-    width: 100%;
     height: 2em;
+
+    border-radius: 6px;
     
     bottom:0;
-    background-color: var(--main-white);
+
 }
 
-.footer-date {
+.footer-symbol {
     height: 100%;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    
-    padding-left: .4em;
-    padding-right: .4em;
 
+    margin-right: .2em;
+    padding-left: 1.35em;
+    padding-right: .5em;
+    padding-bottom: .1em;
     font-weight: bold;
-    font-size: 1.2em;
-    color: var(--bg);
-    background-color: var(--main-color);
-}
-
-.arrow-right-date {
-    width: 0; 
-    height: 0; 
-    border-top: 1em solid transparent;
-    border-bottom: 1em solid transparent;  
-    padding-right: 0.6em;
-
-    border-left: 1em solid var(--main-color);  
+    font-size: 2em;
+    color: var(--main-color);
 }
 
 /*------------*/
@@ -427,13 +404,8 @@ a:visited {
     }
 }
 
-@media screen and (max-width: 47.5em) {
-    .section{
-	margin:0;
-	font-size: 1em;
-	padding-left:5px;
-	width: 100%;
-    }
+@media screen and (max-width: 47em) {
+ 
 
     .tab-info { 
 	grid-area: tab-info;  
@@ -447,11 +419,6 @@ a:visited {
 
     .sidebar {
 	height: 20vh;
-    }
-
-    #about {
-	justify-content: flex-start;
-	padding-top: 2em;
     }
 
     .note-content {
@@ -469,18 +436,3 @@ strong {
     height: 50px;
     padding-top: 0;
 } 
-
-
-
-
-/* ---- reset ---- */
-canvas{ display: flex; } /* ---- particles.js container ---- */ 
-
-#particles-js { 
-    /* stay in a constant spot on the page, regardless of scroll */
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* put it behind other content */
-    z-index: -1;
-}
