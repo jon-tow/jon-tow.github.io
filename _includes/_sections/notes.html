@@ -1,6 +1,4 @@
-
 <section id="notes">
-
   <!-- Section Title Row -->
   <div class="section-header" >
     <h1 class="section-h2">
@@ -11,16 +9,14 @@
     </div>
   </div>
 
-  
-  <!-- Content -->
   <div class="section-content" style="">
-    <!-- Notes Row -->
     <ul class="entry-previews" >
       <!-- Under construction. Coming soon. -->
       {% for post in site.posts %}
-      <li class="pt-3">
+      <li class="pb-3">
       	<p class="post-preview">
-      	  <span style="font-size: .95em; color: var(--light-black)">{{post.date | date: '%B %d, %Y'}}
+      	  <span style="font-size: .95em; color: var(--light-black)">
+	    {{post.date | date: '%B %d, %Y'}}
       	  </span>
       	  <br>
       	  <a href="{{ post.url }}" style="font-size: 1.15em;">
@@ -32,7 +28,6 @@
       </li>
       {% endfor %}
     </ul>      
-
   </div>
 
 </section>

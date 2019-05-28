@@ -37,19 +37,13 @@
   </head>
 
   <body class="container-fluid" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
-    <main class="post" style="background-color: var(--main-white);">
-
-      <!-- Notes Container -->
+    <main class="post">
       <div class="note-content">
-
-	<!-- Notes Header -->
 	<div class="post-header pt-2">
 	  <h1 class="post-h2 mt-4">
             <p>{{ page.title }}</p>
           </h1>
 	</div>
-
-	<!-- Notes Content -->
 	<div class="post-header">                              
           <p class="post-dates">{{ page.date | date: '%B %d, %Y' }}</p>
 	</div>
@@ -57,8 +51,6 @@
           <p>{{ page.introduction }}</p>
           <p>{{ content }}</p>
 	</div>
-
-	
       </div>    
     </main>
   </body>

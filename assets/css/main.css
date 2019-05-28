@@ -26,18 +26,18 @@ html, body {
 }
 
 body {
-    height: 100vh;
     margin: 0 auto;
     max-width: 46em;
     
     font-size: 1em;
     font-family: "Roboto", "Arial", sans-serif;
+    
     line-height: 1.5;
     color: var(--black);
 }
 
 main {
-    margin: 0 auto;
+
 }
 
 .content {
@@ -105,28 +105,6 @@ h4 {
 }
 /*------------*/
 
-/* Head Styling */
-.top-header {
-    position: relative;
-    z-index: 1;
-}
-.top-header h1 {
-    font-size: 2.5em;
-    font-weight: 300;
-}
-
-.top-header a  {}
-
-.top-header a:hover  {
-    color: #565656;
-}
-
-header a {
-    padding: 0 0.5em 0 0.5em;
-}
-/*------------*/
-
-
 /* Nav Styling */
 nav {
     display: flex;
@@ -175,7 +153,7 @@ section {
     margin-bottom: 5em;
     border-radius: 6px;
     width: 40em;
-    box-shadow: 7px 6px var(--bg);
+    box-shadow: 7px 6px rgba(245, 245, 245, .75);
 
 }
 
@@ -190,7 +168,6 @@ section {
 
 .post {
     margin: 0 auto;
-    background-color: var(--main-white);
     height: 100%;
 }
 
@@ -417,10 +394,6 @@ a:visited {
     .nav-item {
 	padding-left: 0;
 	padding-top: .6em;
-    }
-
-    .sidebar {
-	height: 20vh;
     }
 
     .note-content {
