@@ -191,6 +191,7 @@ section {
 .post {
     margin: 0 auto;
     background-color: var(--main-white);
+    height: 100%;
 }
 
 .post-header {
@@ -293,6 +294,7 @@ blockquote {
 
 .note-content {
     padding-left: 2em;
+    padding-right: 2em;
     max-width: 46em;
     margin: 0 auto;
 }
@@ -423,6 +425,10 @@ a:visited {
 
     .note-content {
 	padding-left: 1em;
+    }
+
+    .post {
+	width: 100%;
     }
 }
 
