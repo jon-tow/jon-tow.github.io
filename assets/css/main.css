@@ -149,12 +149,12 @@ nav {
 
 /* Section Styling */
 section {
-    padding: 2em 1em 2em .6em;
+
+    padding: 2em 1em 2em 1.4em;
     margin-bottom: 5em;
     border-radius: 6px;
     width: 40em;
     box-shadow: 7px 6px rgba(245, 245, 245, .75);
-
 }
 
 .section-header {
@@ -168,6 +168,7 @@ section {
 
 .post {
     margin: 0 auto;
+    background-color: var(--main-white);
     height: 100%;
 }
 
