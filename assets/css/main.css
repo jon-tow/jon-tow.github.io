@@ -27,7 +27,7 @@ html, body {
 
 body {
     margin: 0 auto;
-    max-width: 46em;
+    max-width: 44em;
     
     font-size: 1em;
     font-family: "Roboto", "Arial", sans-serif;
@@ -149,12 +149,14 @@ nav {
 
 /* Section Styling */
 section {
-
-    padding: 2em 1em 2em 1.5em;
-    margin-bottom: 5em;
-    border-radius: 6px;
     width: 40em;
-    box-shadow: 7px 6px rgba(245, 245, 245, .75);
+
+    padding: .25em 1em 2em 1.5em;
+    margin-bottom: 5em;
+    
+    border-radius: 5px;
+
+    box-shadow: 5px 5px rgba(245, 245, 245, .6);    
 }
 
 .section-header {
@@ -163,7 +165,7 @@ section {
     justify-content: flex-start;
     align-items: center;
     
-    padding: 1em 0em .7em 2em;
+    padding: 1em 0em .5em 2em;
 }
 
 .post {
@@ -195,7 +197,6 @@ section {
 .post-h2 {
     border: none;
 }
-
 
 .post-h2  > p::first-letter {
     color: var(--main-color);
@@ -258,7 +259,7 @@ blockquote {
 #about {
     margin-top: 1em;
     text-align: justify;
-    padding-top: 0;
+
     background-color: #f7faff;
 }
 
@@ -366,7 +367,7 @@ a {
 }
 
 a:hover {
-    border-bottom: 2px dashed var(--black);
+    border-bottom: 2px dashed var(--light-black);
     text-decoration: none;
     color: var(--black);
 }
