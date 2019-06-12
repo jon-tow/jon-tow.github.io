@@ -27,7 +27,7 @@ html, body {
 
 body {
     margin: 0 auto;
-    max-width: 44em;
+    max-width: 40em;
     
     font-size: 1em;
     font-family: "Roboto", "Arial", sans-serif;
@@ -149,9 +149,8 @@ nav {
 
 /* Section Styling */
 section {
-    width: 40em;
-
-    padding: .25em 1em 2em 1.5em;
+    width: 100%;
+    padding: .25em .5em 2em 1.5em;
     margin-bottom: 5em;
     
     border-radius: 5px;
@@ -217,7 +216,7 @@ section {
     display: flex;
     flex-direction: column;  
     flex-wrap: wrap;
-    padding: 1em 2em 0em 2em;
+    padding: .5em 2em 0em 2em;
 }
 
 .top-link {
