@@ -27,7 +27,7 @@ html, body {
 
 body {
     margin: 0 auto;
-    max-width: 40em;
+    max-width: 36em;
     
     font-size: 1em;
     font-family: "Roboto", "Arial", sans-serif;
@@ -153,9 +153,7 @@ section {
     padding: .25em .5em 2em 1.5em;
     margin-bottom: 5em;
     
-    border-radius: 5px;
-
-    box-shadow: 5px 5px rgba(245, 245, 245, .6);    
+    box-shadow: 4px 5px rgba(245, 245, 245, .8);    
 }
 
 .section-header {
@@ -168,12 +166,28 @@ section {
 }
 
 .post {
-    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 0.6fr 0.4fr 1fr 2.3fr 0.6fr;
+    grid-template-areas: "post-title post-title" "post-header post-header" "post-content post-content" "post-content post-content" "post-content post-content";
     background-color: var(--main-white);
     height: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+}
+
+.post-title {
+    grid-column: 1/-1;
+    width: 100% !important;
+    grid-area: post-title;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .post-header {
+    grid-area: post-header;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -186,10 +200,10 @@ section {
 }
 
 .post-content {
+    grid-area: post-content;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    max-width: 42em;
+
     text-align: justify;    
 }
 
