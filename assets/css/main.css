@@ -152,7 +152,9 @@ section {
     width: 100%;
     padding: .25em .5em 2em 1.5em;
     margin-bottom: 5em;
-    
+
+    border-radius: 2px;
+    border: 1px solid #f7f7f7;
     box-shadow: 4px 5px rgba(245, 245, 245, .8);    
 }
 
@@ -272,7 +274,6 @@ blockquote {
 #about {
     margin-top: 1em;
     text-align: justify;
-
     background-color: #f7faff;
 }
 
