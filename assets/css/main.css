@@ -27,17 +27,14 @@ html, body {
 
 body {
     margin: 0 auto;
-    max-width: 36em;
+    max-width: 34em;
     
     font-size: 1em;
     font-family: "Roboto", "Arial", sans-serif;
     
     line-height: 1.5;
     color: var(--black);
-}
-
-main {
-
+    background-color: var(--main-white);
 }
 
 .content {
@@ -83,11 +80,11 @@ ol li {
 
 /* Header Styling */
 h1 {
-    font-size: 1.75em;
+    font-size: 2em;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 h1, h2 {
@@ -95,12 +92,12 @@ h1, h2 {
 }
 
 h3 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: 400;
 }
 
 h4 {
-    font-size: 1.1em;
+    font-size: 1.25em;
     font-weight: 400;
 }
 /*------------*/
@@ -116,7 +113,7 @@ nav {
 
     padding-top: 2em;
     padding-left: 1.6em;
-    padding-bottom: 1em;
+    padding-bottom: 0em;
 }
 
 .navbar {    
@@ -150,12 +147,11 @@ nav {
 /* Section Styling */
 section {
     width: 100%;
-    padding: .25em .5em 2em 1.5em;
-    margin-bottom: 5em;
+    padding: 2em .5em 0em .5em;
+    margin-bottom: 2em;
 
     border-radius: 2px;
-    border: 1px solid #f7f7f7;
-    box-shadow: 4px 5px rgba(245, 245, 245, .8);    
+    border-top: 1px solid rgb(75, 75, 75, .1);
 }
 
 .section-header {
@@ -163,8 +159,8 @@ section {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    
-    padding: 1em 0em .5em 2em;
+
+    padding-left: 2em;
 }
 
 .post {
@@ -219,7 +215,6 @@ section {
 }
 
 .section-h2 {
-    margin: .5em 0 0;
     border: none;
 }
 
@@ -232,7 +227,7 @@ section {
     display: flex;
     flex-direction: column;  
     flex-wrap: wrap;
-    padding: .5em 2em 0em 2em;
+    padding: 0 2em 0em 2em;
 }
 
 .top-link {
@@ -272,17 +267,17 @@ blockquote {
 /*-------------*/
 
 #about {
-    margin-top: 1em;
     text-align: justify;
-    background-color: #f7faff;
+    margin-top: 2em;
+    /* background-color: #f7faff; */
 }
 
 #project {
-    background-color: #fffbf4;
+    /* background-color: rgba(237, 255, 248, 0.9); */
 }
 
 #notes {
-    background-color: rgba(255,192,203, 0.1);
+    /* background-color: rgba(255,192,203, 0.1); */
 }
 
 .note-content {
@@ -377,7 +372,8 @@ footer {
 /* Links */
 a {
     color: var(--main-color);
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid var(--main-color);
+    text-decoration:none;
 }
 
 a:hover {
@@ -385,10 +381,7 @@ a:hover {
     text-decoration: none;
     color: var(--black);
 }
-a:link,
-a:visited {
-    text-decoration: none;
-}
+
 /*------------*/
 
 
