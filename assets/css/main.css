@@ -1,6 +1,6 @@
 :root {
     /* Palette Colors */
-    --main-color: #8E80D6;
+    --main-color: rgba(142, 128, 214, 1.0);
     --second-color: #f8a442;
     --third-color: #F86071;
     --bg-2: #241a4d;
@@ -125,7 +125,7 @@ nav {
 }
 
 .navbar a {
-    
+
 }
 
 .nav-item {
@@ -372,7 +372,7 @@ footer {
 /* Links */
 a {
     color: var(--main-color);
-    border-bottom: 1px solid var(--main-color);
+    border-bottom: 1.5px solid rgba(142, 128, 214, 0.5);
     text-decoration:none;
 }
 
