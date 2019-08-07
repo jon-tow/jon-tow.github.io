@@ -13,6 +13,10 @@
     /* Global Styles */
     --box-shadow: rgba(27, 27, 27, 0) 1px 3px 8px;
     --inner-left-align: .9em;
+
+    /* Sizes */
+    --base-font-size: 1em;
+    --base-height-padding: 1.5em;
 }
 
 * {
@@ -29,8 +33,9 @@ body {
     margin: 0 auto;
     max-width: 34em;
     
-    font-size: 1em;
-    font-family: "Roboto", "Arial", sans-serif;
+    font-size: var(--base-font-size);
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 500;
     
     line-height: 1.5;
     color: var(--black);
@@ -80,11 +85,11 @@ ol li {
 
 /* Header Styling */
 h1 {
-    font-size: 2em;
+    font-size: 1.75em;
 }
 
 h2 {
-    font-size: 1.75em;
+    font-size: 1.5em;
 }
 
 h1, h2 {
@@ -92,12 +97,12 @@ h1, h2 {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 400;
 }
 
 h4 {
-    font-size: 1.25em;
+    font-size: var(--base-font-size);
     font-weight: 400;
 }
 /*------------*/
@@ -111,9 +116,7 @@ nav {
 
     width: 100%;
 
-    padding-top: 2em;
-    padding-left: 1.6em;
-    padding-bottom: 0em;
+    padding: var(--base-height-padding) 0em 1em 1.6em;
 }
 
 .navbar {    
@@ -134,7 +137,7 @@ nav {
 
 .navbar-brand {
     font-weight: bold;
-    font-size: 1.75em;
+    font-size: 1.5em;
     padding-left: .5em;
     color: var(--third-color);
 }
@@ -147,8 +150,8 @@ nav {
 /* Section Styling */
 section {
     width: 100%;
-    padding: 2em .5em 0em .5em;
-    margin-bottom: 2em;
+    padding: var(--base-height-padding) .5em 0em .5em;
+    margin-bottom: var(--base-height-padding);
 
     border-top: 1px solid rgb(75, 75, 75, .1);
 }
@@ -267,16 +270,12 @@ blockquote {
 
 #about {
     text-align: justify;
-    margin-top: 2em;
-    /* background-color: #f7faff; */
 }
 
 #project {
-    /* background-color: rgba(237, 255, 248, 0.9); */
 }
 
 #notes {
-    /* background-color: rgba(255,192,203, 0.1); */
 }
 
 .note-content {
