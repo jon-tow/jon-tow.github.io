@@ -345,7 +345,7 @@ footer {
     border-radius: 6px;
     
     bottom:0;
-
+    padding-left: 0.75em;
 }
 
 .footer-symbol {
