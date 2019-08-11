@@ -39,9 +39,21 @@ body {
     
     line-height: 1.5;
     color: var(--black);
-    background-color: var(--main-white);
+    background-color: var(--main-white); /* var(--main-white); */
 }
 
+.page-effect
+{
+    box-shadow:0 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper {
+    margin: 0.75em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: var(--main-white);
+    border: 1px solid #e6e6e6;
+}
 .content {
     flex: 1 0 auto;    
 }
@@ -120,7 +132,7 @@ nav {
 }
 
 .navbar {    
-
+    padding-left: 1em;
 }
 
 .navbar-nav .navbar ul li {
@@ -138,7 +150,7 @@ nav {
 .navbar-brand {
     font-weight: bold;
     font-size: 1.5em;
-    padding-left: .5em;
+    padding-left: .75em;
     color: var(--third-color);
 }
 
@@ -233,7 +245,6 @@ section {
 }
 
 .top-link {
-    font-size:.9em;
     width: 100%;
     text-align:right;
     padding-right: 2em;
@@ -327,9 +338,7 @@ footer {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;  
-    flex-wrap: nowrap;
-    
-    font-size: 14px;
+    flex-wrap: nowrap;   
 
     height: 2em;
 
@@ -350,7 +359,7 @@ footer {
     padding-right: .5em;
     padding-bottom: .1em;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.25em;
     color: var(--main-color);
 }
 
@@ -391,7 +400,10 @@ a:hover {
 }
 
 @media screen and (max-width: 47em) {
- 
+    .wrapper {
+	margin: 0;
+	border: none;
+    }
 
     .tab-info { 
 	grid-area: tab-info;  
