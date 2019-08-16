@@ -331,14 +331,14 @@ footer {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;  
-    flex-wrap: nowrap;   
+    flex-wrap: nowrap;
 
     height: 2em;
 
     border-radius: 6px;
     
     bottom:0;
-    padding-left: 2.5em;
+    padding-left: .75em;
 }
 
 .footer-symbol {
