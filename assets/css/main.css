@@ -8,7 +8,7 @@
     --main-white: #FCFCFC;    
     --black: #353535;
     --light-black: rgb(75, 75, 75, .85);
-    --bg: #F5F5F5;
+    --bg: white;
 
     /* Global Styles */
     --box-shadow: rgba(27, 27, 27, 0) 1px 3px 8px;
@@ -37,9 +37,9 @@ body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 500;
     
-    line-height: 1.5;
+    line-height: 1.425;
     color: var(--black);
-    background-color: #fBfBfB;
+    background-color: var(--bg);
 }
 
 .page-effect {
@@ -157,7 +157,7 @@ section {
     padding: var(--base-height-padding) .5em 0em .5em;
     margin-bottom: var(--base-height-padding);
 
-    border-top: 1.5px solid rgba(200,200,200, 0.2);
+    border-top: 2px solid #f5f6f7;
 }
 
 .section-header {
