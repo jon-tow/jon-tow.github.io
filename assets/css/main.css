@@ -8,7 +8,7 @@
     --main-white: #FCFCFC;    
     --black: #353535;
     --light-black: rgb(75, 75, 75, .85);
-    --bg: white;
+    --bg: #fafafa;
 
     /* Global Styles */
     --box-shadow: rgba(27, 27, 27, 0) 1px 3px 8px;
