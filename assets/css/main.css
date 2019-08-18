@@ -157,7 +157,7 @@ section {
     padding: var(--base-height-padding) .5em 0em .5em;
     margin-bottom: var(--base-height-padding);
 
-    border-top: 4px solid #f5f6f7;
+    border-top: 3px solid #f5f6f7;
 }
 
 .section-header {
