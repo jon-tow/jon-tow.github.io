@@ -6,9 +6,9 @@
     --bg-2: #241a4d;
 
     --main-white: #FCFCFC;
-    --black: #353535;
+    --black: #151515;
     --light-black: rgb(75, 75, 75, .85);
-    --bg: #f9f9f9;
+    --bg: #fbfbfb;
 
     /* Global Styles */
     --box-shadow: rgba(27, 27, 27, 0) 1px 3px 8px;
@@ -52,6 +52,12 @@ body {
 
 .third-color {
     color: var(--second-color);
+}
+
+.github-link {
+    text-decoration: none;
+    border-bottom: none;
+    padding: 0;
 }
 
 .contents {
