@@ -286,6 +286,9 @@ blockquote {
 #project {
 }
 
+.project-name {
+}
+
 #notes {
     padding-bottom: 2em;
 }
@@ -379,19 +382,18 @@ footer {
 
 /* Links */
 a {
+    transition: 0.25s;
     color: var(--main-color);
     border-bottom: 1.5px solid rgba(142, 128, 214, 0.5);
-
-    text-decoration:none;
-    transition: 0.25s;
     padding: 1px 4px 1.5px 4px;
+    text-decoration:none;
     
 }
 
 a:hover {
-    
-    text-decoration: none;
     color: #c97433;
+    border-bottom-color: transparent;
+    text-decoration: none;
     background-color: #fdedc7;
 }
 
