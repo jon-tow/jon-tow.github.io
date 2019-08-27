@@ -56,9 +56,9 @@ body {
 }
 
 .github-link {
+    padding: 0;
     text-decoration: none;
     border-bottom: none;
-    padding: 0;
 }
 
 .contents {
@@ -381,17 +381,18 @@ footer {
 a {
     color: var(--main-color);
     border-bottom: 1.5px solid rgba(142, 128, 214, 0.5);
+
     text-decoration:none;
-    transition: 0.5s;
+    transition: 0.25s;
     padding: 1px 4px 1.5px 4px;
+    
 }
 
 a:hover {
-
+    
     text-decoration: none;
     color: #c97433;
     background-color: #fdedc7;
-    border-radius: 4px;
 }
 
 /*------------*/
