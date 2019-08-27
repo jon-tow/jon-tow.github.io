@@ -2,7 +2,7 @@
     /* Palette Colors */
     --main-color: rgba(142, 128, 214, 1.0);
     --second-color: #f8a442;
-     
+
     --third-color: rgb(248, 96, 113);
     --bg-2: #241a4d;
 
@@ -387,14 +387,13 @@ a {
     border-bottom: 1.5px solid rgba(142, 128, 214, 0.5);
     padding: 1px 4px 1.5px 4px;
     text-decoration:none;
-    
 }
 
 a:hover {
-    color: #c97433;
+    color: var(--third-color);
     border-bottom-color: transparent;
     text-decoration: none;
-    background-color: #fdedc7;
+    background-color: rgba(253, 237, 199, 0.2);
 }
 
 /*------------*/
