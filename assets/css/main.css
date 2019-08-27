@@ -2,6 +2,7 @@
     /* Palette Colors */
     --main-color: rgba(142, 128, 214, 1.0);
     --second-color: #f8a442;
+     
     --third-color: rgb(248, 96, 113);
     --bg-2: #241a4d;
 
@@ -371,7 +372,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding-top: 1.5em;
-    
+
     padding-right: 2em;
     width:100%;
 }
@@ -382,14 +383,15 @@ a {
     border-bottom: 1.5px solid rgba(142, 128, 214, 0.5);
     text-decoration:none;
     transition: 0.5s;
-    padding: 0 4px 1px 4px;
+    padding: 1px 4px 1.5px 4px;
 }
 
 a:hover {
-    border-bottom: 2px dashed var(--light-black);
+
     text-decoration: none;
-    color: var(--third-color);
-    background-color: rgba(248, 96, 113, 0.15);
+    color: #c97433;
+    background-color: #fdedc7;
+    border-radius: 4px;
 }
 
 /*------------*/
