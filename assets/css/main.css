@@ -32,7 +32,7 @@ html, body {
 
 body {
     margin: 0 auto;
-    max-width: 38em;
+    max-width: 36em;
 
     font-size: var(--base-font-size);
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -166,7 +166,7 @@ section {
     padding: var(--base-height-padding) .5em var(--base-height-padding) .5em;
 
     border-top: 2px solid #f2f2f2;
-    background-color: white;
+
 }
 
 .post {
@@ -386,8 +386,7 @@ footer {
 a {
     transition: 0.25s;
     color: var(--main-color);
-    border-bottom: 1.5px solid rgba(142, 126, 209, .2);
-
+    border-bottom: 1.5px solid transparent;
     text-decoration:none;
 }
 
