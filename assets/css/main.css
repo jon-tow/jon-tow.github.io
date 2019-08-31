@@ -17,7 +17,7 @@
 
     /* Sizes */
     --base-font-size: 1em;
-    --base-height-padding: 1.5em;
+    --base-height-padding: 1.25em;
 }
 
 * {
@@ -32,7 +32,7 @@ html, body {
 
 body {
     margin: 0 auto;
-    max-width: 36em;
+    max-width: 38em;
 
     font-size: var(--base-font-size);
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -56,9 +56,8 @@ body {
 }
 
 .github-link {
-    padding: 0;
     text-decoration: none;
-    border-bottom: none;
+    border-bottom: 1.5px solid transparent;
 }
 
 .contents {
@@ -127,7 +126,7 @@ nav {
 
     width: 100%;
 
-    padding: var(--base-height-padding) 0em 1em 1.5em;
+    padding: var(--base-height-padding) 0em 0.75em 1.5em;
 }
 
 .navbar {
@@ -140,6 +139,9 @@ nav {
 
 .navbar a {
 
+}
+.navbar a:hover {
+ 
 }
 
 .nav-item {
@@ -161,10 +163,10 @@ nav {
 /* Section Styling */
 section {
     width: 100%;
-    padding: var(--base-height-padding) .5em 0em .5em;
-    margin-bottom: var(--base-height-padding);
+    padding: var(--base-height-padding) .5em var(--base-height-padding) .5em;
 
-    border-top: 3px solid #f2f2f2;
+    border-top: 2px solid #f2f2f2;
+    background-color: white;
 }
 
 .post {
@@ -384,16 +386,16 @@ footer {
 a {
     transition: 0.25s;
     color: var(--main-color);
-    border-bottom: 1.5px solid rgba(142, 128, 214, 0.5);
-    padding: 1px 4px 1.5px 4px;
+    border-bottom: 1.5px solid rgba(142, 126, 209, .2);
+
     text-decoration:none;
 }
 
 a:hover {
-    color: var(--third-color);
+    color: var(--black);
     border-bottom-color: transparent;
-    text-decoration: none;
-    background-color: rgba(253, 237, 199, 0.2);
+    text-decoration: dotted;
+    border-bottom: 1.5px solid var(--light-black);
 }
 
 /*------------*/
