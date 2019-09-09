@@ -17,7 +17,13 @@
 
     /* Sizes */
     --base-font-size: 1em;
-    --base-height-padding: 1.25em;
+    --base-height-padding: 1.325em;
+
+    /* Breakpoints */
+    --bp-small: 48em;
+    --bp-medium: 64em;
+    --bp-large: 85.375;
+    --bp-xlarge: 120em;
 }
 
 * {
@@ -31,7 +37,7 @@ html, body {
 }
 
 body {
-    margin: 0 auto;
+    margin-left: 6em;
     max-width: 36em;
 
     font-size: var(--base-font-size);
@@ -141,7 +147,7 @@ nav {
 
 }
 .navbar a:hover {
- 
+
 }
 
 .nav-item {
@@ -149,7 +155,7 @@ nav {
 }
 
 .navbar-brand {
-    font-weight: bold;
+    font-weight: 900 !important;
     font-size: 1.5em;
     padding-left: .75em;
     color: var(--third-color);
@@ -164,9 +170,7 @@ nav {
 section {
     width: 100%;
     padding: var(--base-height-padding) .5em var(--base-height-padding) .5em;
-
-    border-top: 2px solid #f2f2f2;
-
+    border-top: 2px solid #f2f2f6;
 }
 
 .post {
@@ -208,7 +212,7 @@ section {
     display: flex;
     flex-direction: column;
 
-    text-align: justify;    
+    text-align: justify;
 }
 
 .post-h2 {
@@ -231,6 +235,8 @@ section {
 
 .section-h2 {
     border: none;
+    text-decoration: underline;
+    text-decoration-color: rgba(142, 128, 214, 0.1);
 }
 
 .section-h2  > p::first-letter {
@@ -240,7 +246,7 @@ section {
 
 .section-content {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     flex-wrap: wrap;
     padding: 0 2em 0em 2em;
 }
@@ -333,7 +339,8 @@ blockquote {
 }
 
 .project-item {
-    margin-top: .5em;
+    padding-top: .5em;
+    margin-right: 1em;
 }
 /*------------*/
 
@@ -388,6 +395,7 @@ a {
     color: var(--main-color);
     border-bottom: 1.5px solid transparent;
     text-decoration:none;
+
 }
 
 a:hover {
@@ -403,11 +411,20 @@ a:hover {
 /* Device Specific Styling */
 @media all {
     html {
-        font-size: 1em;
+	font-size: 1em;
     }
 }
 
-@media screen and (max-width: 47em) {
+@media only screen and (min-width: 90em) {
+    body {
+	margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 46em) {
+    body {
+	margin: 0 auto;
+    }
     .wrapper {
 	margin: 0;
 	border: none;
