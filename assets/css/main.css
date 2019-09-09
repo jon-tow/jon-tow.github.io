@@ -235,8 +235,6 @@ section {
 
 .section-h2 {
     border: none;
-    text-decoration: underline;
-    text-decoration-color: rgba(142, 128, 214, 0.1);
 }
 
 .section-h2  > p::first-letter {
