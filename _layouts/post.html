@@ -1,56 +1,75 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../../data/favicon.ico" type="image/gif" sizes="16x16">
 
     <!-- Style -->
-    <link rel="stylesheet"
-	  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-	  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-	  crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/syntax.css">
 
-    <!-- Scripts -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-	    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-	    crossorigin="anonymous">
-    </script>
-
     <!-- MathJax-->
-    <script type="text/javascript" async
-	    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['\[','\]'], ['$', '$']]}});
+    </script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto"
-	  rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-	  rel="stylesheet"
-	  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-	  crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/d5ad140c4a.js"></script>
 
     <title>Jon Tow</title>
-  </head>
+</head>
 
-  <body>
-    <main class="post">
-	<div class="post-title pt-2">
-	  <h1 class="post-h2 mt-4">
-            <p>{{ page.title }}</p>
-          </h1>
-	</div>
-	<div class="post-header">                              
-          <p class="post-date">{{ page.date | date: '%B %d, %Y' }}</p>
-	</div>
-	<div class="post-content">
-          <p>{{ page.introduction }}</p>
-          <p>{{ content }}</p>
-	</div>
+<body>
+    <div class="wrapper page-effect">
+        <main>
+            <div class="post">
+                <div class="post-title pt-5 pb-0 mb-0">
+                    <table>
+                        <tr>
+                            <td> <span class="bold">Title</span> </td>
+                            <td>
+                                <span class="bold third-color">
+                  <em>{{ page.title }}</em>
+                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <span class="bold">Author</span> </td>
+                            <td>
+                                Jonathan Tow
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <span class="bold">Date</span> </td>
+                            <td>
+                                {{ page.date | date: '%B %d, %Y' }}
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="post-header">
+                    <div class="post-categories">
+                        {% if post %} {% assign categories = post.categories %} {% else %} {% assign categories = page.categories %} {% endif %} {% for category in categories %}
+                        <a style="font-size: .9em;" href="{{site.baseurl}}/categories/#{{category|slugize}}">
+                            <span style="color: gray;">+</span>{{category}}
+                        </a>
+                        {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
+                    </div>
+                </div>
+                <div class="post-content pt-3">
+                    <p class="post-intro" style="color: grey">{{ page.introduction }}.</p>
+                    <p>{{ content }}</p>
+                </div>
+            </div>
+    </div>
     </main>
-  </body>
+</body>
 
 </html>
