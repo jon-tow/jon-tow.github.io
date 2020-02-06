@@ -467,8 +467,10 @@ footer {
 
 a {
     color: var(--main-color);
-    border-bottom: 2px solid black;
-
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.18em;
+  background-position: 0 98%;
 }
 
 a:hover {
