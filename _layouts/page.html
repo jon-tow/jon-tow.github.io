@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    {% include _base/head.html %}
+  </head>
 
-<head>
-  {% include _base/head.html %}
-</head>
-
-<body class="" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
-  <div class="wrapper page-effect">
+  <body class="" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
     {% include _base/nav.html %}
-    <main>
-      {{ content }}
-    </main>
-  </div>
-  {% include _base/footer.html %}
-</body>
-
+    <main> {{ content }} </main>
+    {% include _base/footer.html %}
+  </body>
 </html>

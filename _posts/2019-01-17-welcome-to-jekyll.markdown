@@ -1,8 +1,20 @@
 ---
 layout: post
-title:  "Deep Learning on an NVIDIA RTX"
+title:  "Under Construction. Coming Soon!"
 date:   2019-01-17 00:29:09 -0500
-categories: jekyll update
+tags: test
+introduction: Nothing to see here...
 ---
-This is a short review on my experience
-performing deep learning tasks with an NVIDIA RTX 2070.
+
+&#128679;
+&#128679;
+&#128679;
+&#128679;
+&#128679;
+&#128679;
+&#128679;
+&#128679;
+&#128679;
+&#128679;
+&#128679;
+&#128679;

@@ -1,17 +1,24 @@
 <nav id="nav">
-  <div class="w-100">
-    <span class="navbar-brand pb-0" style="font-size: 1.35em" href="{{site.url}}">
-      <h2>Jon Tow</h2>
-    </span>
+  <span
+    class="navbar-brand"
+    style="font-size: 1.35em;"
+    href="{{site.url}}"
+  >
+    <a href="{{site.url}}" style="color: var(--black);"><h2>Jon Tow</h2></a>
+  </span>
 
-    <div class="navbar ml-0 navbar-expand mb-0 pt-0 pb-0">
-      <div class="collapse navbar-collapse" id="navbarNav">
-	<p>
-          <a href="#about"> about</a>
-          <a class="ml-2" href="#project"> projects</a>
-          <a class="ml-2" href="#notes"> notes</a>
-	</p>
-      </div>
+  <div class="navbar navbar-expand">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <p>
+        <a href="{{site.url}}#about">
+          <span class="about-nav">about</span>
+        </a>
+        <a class="ml-2" href="{{site.url}}#project">
+          <span class="projects-nav">projects</span>
+        </a>
+        <a class="ml-2" href="{{site.url}}#notes">
+          <span class="notes-nav">notes</span></a>
+      </p>
     </div>
   </div>
 </nav>
