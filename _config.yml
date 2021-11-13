@@ -23,9 +23,6 @@ github_username:  jon-tow
 
 # Build settings
 markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
 highlighter: rouge
 
 # include projects directory
