@@ -238,10 +238,15 @@
       constructor(parent, cellAutomaton) {
         this.cellAutomaton = cellAutomaton;
         this.canvas = document.createElement('canvas');
-        this.canvas.width = CellAutomatonCanvas.WIDTH();
-        this.canvas.height = CellAutomatonCanvas.HEIGHT();
-        parent.appendChild(this.canvas);
+        // Ensure pixel sharpness.
+        let scale = window.devicePixelRatio;
+        this.canvas.style.width = CellAutomatonCanvas.WIDTH() + "px";
+        this.canvas.style.height = CellAutomatonCanvas.HEIGHT() + "px";
+        this.canvas.width = CellAutomatonCanvas.WIDTH() * scale;
+        this.canvas.height = CellAutomatonCanvas.HEIGHT() * scale;
         this.ctx = this.canvas.getContext('2d');
+        this.ctx.scale(scale, scale);
+        parent.appendChild(this.canvas);
 
         // Cache the paths for speed up!
         this.cellPaths = this.initCellPaths();
