@@ -1,25 +1,27 @@
 <section id="notes">
   <div class="section-header">
-    <h1 class="section-h2"><p>Notes</p></h1>
-    <div class="top-link mb-1">
-      <a href="{{sit.url}}/tags"> <span class="notes-nav underline">Tags </a>
+    <h2 class="section-h2">Notes</h2>
+    <!--
+    <div class="top-link">
+      <a href="{{sit.url}}/tags"> <span class="minor-nav underline">Tags </a>
     </div>
+    -->
   </div>
 
   <div class="section-content">
     <ul class="entry-previews">
       {% for post in site.posts %}
-      <li class="pb-3">
+      <li class="">
         <p class="post-preview">
           <span style="color: var(--light-black);">
-            {{post.date | date: '%B %d, %Y'}}
+            {{post.date | date: '%m/%d/%Y'}}
           </span>
           <br />
           <a href="{{ post.url }}">
-            <span class="notes-nav">{{ post.title }}</span>
+            <span class="minor-nav">{{ post.title }}</span>
           </a>
           <br />
-          {{ post.introduction }}
+          <!-- {{ post.introduction }} -->
         </p>
       </li>
       {% endfor %}

@@ -1,52 +1,52 @@
-@media (prefers-color-scheme: light) {
-  /* Light theme styles go here */
-  :root {
-    --black: #232333;
-    --color: #232333;
-    --name-color: #232333;
-    --header: rgb(60, 60, 60);
-    --header-type: rgb(95, 95, 95);
-    --bg: #fbfbfb;
-    --bg-2: #241a4d;
-    --purple: #b15dab;
-    --purple-bg: #faf0f8;
-    --blue: #35759c;
-    --blue-bg: #fafdff;
-    --green: #479c06;
-    --green-bg: #ecfae9;
-    --red: #e27500;
-    --third-color: #232333;
-    --red-bg: #fff1ec;
-    --off-bg: #ededfa;
-    --border: #cfcfd1;
-    --error: #cc3737;
-  }
-}
+/* @media (prefers-color-scheme: light) { */
+/*   /\* Light theme styles go here *\/ */
+/*   :root { */
+/*     --black: #232333; */
+/*     --color: #232333; */
+/*     --name-color: #232333; */
+/*     --header: rgb(60, 60, 60); */
+/*     --header-type: rgb(95, 95, 95); */
+/*     --bg: #fbfbfb; */
+/*     --bg-2: #241a4d; */
+/*     --purple: #b15dab; */
+/*     --purple-bg: #faf0f8; */
+/*     --blue: #35759c; */
+/*     --blue-bg: #fafdff; */
+/*     --green: #479c06; */
+/*     --green-bg: #ecfae9; */
+/*     --red: #e27500; */
+/*     --third-color: #232333; */
+/*     --red-bg: #fff1ec; */
+/*     --off-bg: #ededfa; */
+/*     --border: #cfcfd1; */
+/*     --error: #cc3737; */
+/*   } */
+/* } */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --red: #ffb76a;
-    --red-bg: #413c39;
-    --purple: #61f4ff;
-    --purple-bg: #404649;
-    --blue: #61f4ff;
-    --blue-bg: #404649;
-    --green: #67ff81;
-    --green-bg: #41493f;
-    --black: #000000;
-    --second-color: #fb6747;
-    --third-color: #fdb9ff;
-    --white: rgb(243, 243, 243);
-    --color: rgb(243, 243, 243);
-    --name-color: rgb(243, 243, 243);
-    --header: rgb(219, 219, 219);
-    --header-type: rgb(184, 173, 173);
-    --bg: rgb(30, 30, 30);
-    --off-bg: rgb(43, 43, 43);
-    --border: #000;
-    --error: #cc3737;
-  }
-}
+/* @media (prefers-color-scheme: dark) { */
+/*   :root { */
+/*     --red: #ffb76a; */
+/*     --red-bg: #413c39; */
+/*     --purple: #61f4ff; */
+/*     --purple-bg: #404649; */
+/*     --blue: #61f4ff; */
+/*     --blue-bg: #404649; */
+/*     --green: #67ff81; */
+/*     --green-bg: #41493f; */
+/*     --black: #000000; */
+/*     --second-color: #fb6747; */
+/*     --third-color: #fdb9ff; */
+/*     --white: rgb(243, 243, 243); */
+/*     --color: rgb(243, 243, 243); */
+/*     --name-color: rgb(243, 243, 243); */
+/*     --header: rgb(219, 219, 219); */
+/*     --header-type: rgb(184, 173, 173); */
+/*     --bg: rgb(30, 30, 30); */
+/*     --off-bg: rgb(43, 43, 43); */
+/*     --border: #000; */
+/*     --error: #cc3737; */
+/*   } */
+/* } */
 
 .highlight table {
 }
